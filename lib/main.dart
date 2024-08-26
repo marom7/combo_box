@@ -38,8 +38,14 @@ class _MyAppState extends State<MyApp> {
       hd,
       selectedIndex: 3,
     );
-    cmbIT1 = ComboBox('בחר מנהל רשת', it, selectedIndex: 4,);
-    cmbIT2 = ComboBox('בחר מנהל רשת', it, selectedIndex: 2,);
+    cmbIT1 = ComboBox(
+      'בחר מנהל רשת', 
+      it, 
+      selectedIndex: 4,);
+    cmbIT2 = ComboBox(
+      'בחר מנהל רשת',
+       it, 
+       selectedIndex: 2,);
   }
 
   @override
