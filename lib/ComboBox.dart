@@ -48,7 +48,7 @@ class _ComboBox extends State<ComboBox> {
                       child:
                           Text(widget.hint!, textDirection: TextDirection.rtl),
                     ),
-                    value:  widget.selectedValue,
+                    value: widget.selectedValue,
                     isExpanded: true,
                     underline: const SizedBox(),
                     borderRadius: BorderRadius.circular(10),
