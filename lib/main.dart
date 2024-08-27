@@ -63,8 +63,8 @@ class _MyAppState extends State<MyApp> {
           onPressed: () {
             Fluttertoast.showToast(
                 msg: '${cmbHD.selectedValue!} [${cmbHD.selectedIndex}] תמיכה\n'
-                    '${cmbIT1.selectedValue!} [${cmbIT1.selectedIndex}] מ.רשת בוקר\n'
-                    '${cmbIT2.selectedValue!} [${cmbIT2.selectedIndex}] מ.רשת ערב',
+                    '${cmbAdmin1.selectedValue!} [${cmbAdmin1.selectedIndex}] מ.רשת בוקר\n'
+                    '${cmbAdmin2.selectedValue!} [${cmbAdmin2.selectedIndex}] מ.רשת ערב',
                 toastLength: Toast.LENGTH_LONG,
                 gravity: ToastGravity.BOTTOM_LEFT,
                 timeInSecForIosWeb: 1,
