@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late ComboBox cmbHD, cmbIT1, cmbIT2;
+  late ComboBox cmbHD, cmbAdmin1, cmbAdmin2;
   @override
   void initState() {
     super.initState();
@@ -38,11 +38,11 @@ class _MyAppState extends State<MyApp> {
       hd,
       selectedIndex: 3,
     );
-    cmbIT1 = ComboBox(
+    cmbAdmin1 = ComboBox(
       'בחר מנהל רשת', 
       it, 
       selectedIndex: 4,);
-    cmbIT2 = ComboBox(
+    cmbAdmin2 = ComboBox(
       'בחר מנהל רשת',
        it, 
        selectedIndex: 2,);
@@ -56,15 +56,15 @@ class _MyAppState extends State<MyApp> {
             height: 40,
           ),
           cmbHD,
-          cmbIT1,
-          cmbIT2
+          cmbAdmin1,
+          cmbAdmin2
         ]),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
             Fluttertoast.showToast(
                 msg: '${cmbHD.selectedValue!} [${cmbHD.selectedIndex}] תמיכה\n'
                     '${cmbIT1.selectedValue!} [${cmbIT1.selectedIndex}] מ.רשת בוקר\n'
-                    '${cmbIT2.selectedValue!} [${cmbIT2.selectedIndex}] מ. רשת ערב',
+                    '${cmbIT2.selectedValue!} [${cmbIT2.selectedIndex}] מ.רשת ערב',
                 toastLength: Toast.LENGTH_LONG,
                 gravity: ToastGravity.BOTTOM_LEFT,
                 timeInSecForIosWeb: 1,
