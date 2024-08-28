@@ -55,7 +55,33 @@ class _MyAppState extends State<MyApp> {
           const SizedBox(
             height: 40,
           ),
-          cmbHD,
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                ListTile(
+                  leading: const Icon(Icons.emoji_people_outlined),
+                  title: const Text('תורן תמיכה בוקר 06:30'),
+                  subtitle: cmbHD,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    TextButton(
+                      child: const Text('שלח הודעה'),
+                      onPressed: () {/* ... */},
+                    ),
+                    const SizedBox(width: 8),
+                    TextButton(
+                      child: const Text('עדכן'),
+                      onPressed: () {/* ... */},
+                    ),
+                    const SizedBox(width: 8),
+                  ],
+                ),
+              ],
+            ),
+          ),
           cmbIT1,
           cmbIT2
         ]),
