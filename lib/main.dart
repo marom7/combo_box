@@ -53,10 +53,10 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
         body: Column(children: [
           const SizedBox(
-            height: 40,
+            height: 25,
           ),
           Padding(
-            padding: const EdgeInsets.all(25.0),
+            padding: const EdgeInsets.all(15.0),
             child: Center(
               child: Card(
                 color: const Color.fromARGB(66, 154, 133, 175),
@@ -89,8 +89,76 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
           ),
-          cmbIT1,
-          cmbIT2
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Center(
+              child: Card(
+                color: const Color.fromARGB(66, 154, 133, 175),
+                shadowColor: Colors.white12,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      leading: const Icon(Icons.emoji_people_outlined),
+                      title: const Text('      תורן מ.רשת בוקר 07:30-16:30'),
+                      subtitle: cmbIT1,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        TextButton(
+                          child: const Text('שלח הודעה'),
+                          onPressed: () {/* ... */},
+                        ),
+                        const SizedBox(width: 8),
+                        TextButton(
+                          child: const Text('עדכן'),
+                          onPressed: () {/* ... */},
+                        ),
+                       // const SizedBox(width: 8),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Center(
+              child: Card(
+                color: const Color.fromARGB(66, 154, 133, 175),
+                shadowColor: Colors.white12,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      leading: const Icon(Icons.emoji_people_outlined),
+                      title: const Text('      כונן מ.רשת ערב'),
+                      subtitle: cmbIT2,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        TextButton(
+                          child: const Text('שלח הודעה'),
+                          onPressed: () {/* ... */},
+                        ),
+                        const SizedBox(width: 8),
+                        TextButton(
+                          child: const Text('עדכן'),
+                          onPressed: () {/* ... */},
+                        ),
+                       // const SizedBox(width: 8),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          //cmbIT1,
+          //cmbIT2
         ]),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
