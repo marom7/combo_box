@@ -55,31 +55,38 @@ class _MyAppState extends State<MyApp> {
           const SizedBox(
             height: 40,
           ),
-          Card(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                ListTile(
-                  leading: const Icon(Icons.emoji_people_outlined),
-                  title: const Text('תורן תמיכה בוקר 06:30'),
-                  subtitle: cmbHD,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: Center(
+              child: Card(
+                color: const Color.fromARGB(66, 154, 133, 175),
+                shadowColor: Colors.white12,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    TextButton(
-                      child: const Text('שלח הודעה'),
-                      onPressed: () {/* ... */},
+                    ListTile(
+                      leading: const Icon(Icons.emoji_people_outlined),
+                      title: const Text('      תורן תמיכה בוקר 06:30'),
+                      subtitle: cmbHD,
                     ),
-                    const SizedBox(width: 8),
-                    TextButton(
-                      child: const Text('עדכן'),
-                      onPressed: () {/* ... */},
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        TextButton(
+                          child: const Text('שלח הודעה'),
+                          onPressed: () {/* ... */},
+                        ),
+                        const SizedBox(width: 8),
+                        TextButton(
+                          child: const Text('עדכן'),
+                          onPressed: () {/* ... */},
+                        ),
+                       // const SizedBox(width: 8),
+                      ],
                     ),
-                    const SizedBox(width: 8),
                   ],
                 ),
-              ],
+              ),
             ),
           ),
           cmbIT1,

@@ -33,7 +33,7 @@ class _ComboBox extends State<ComboBox> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(40.0),
+        padding: const EdgeInsets.all(15.0),
         child: Container(
             decoration: BoxDecoration(
                 border: Border.all(
