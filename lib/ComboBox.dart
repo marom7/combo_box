@@ -55,6 +55,7 @@ class _ComboBox extends State<ComboBox> {
                     dropdownColor: Colors.blue[200],
                     items: widget.items!.map((String item) {
                       return DropdownMenuItem<String>(
+                          alignment: AlignmentDirectional.bottomStart,
                           value: item,
                           child: Container(
                             alignment: Alignment.centerRight,
