@@ -98,10 +98,10 @@ class _MyAppState extends State<MyApp> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    ListTile(
-                      leading: const Icon(Icons.emoji_people_outlined),
-                      title: const Text('      תורן מ.רשת בוקר 07:30-16:30'),
-                      subtitle: cmbIT1,
+                    const ListTile(
+                      leading: Icon(Icons.emoji_people_outlined), // ICON FOR CARD
+                      title: Text('      תורן מ.רשת בוקר 07:30-16:30'), // NAME OF THE SHIFT IN CURRENT DATE
+                      subtitle: Text('מקסים'), // NAME OF THE EMPLOYEE @ CUR. SHIFT
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
